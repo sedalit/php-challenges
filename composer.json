@@ -1,0 +1,19 @@
+{
+    "name": "sedalit/php-challenges",
+    "description": "Some challenges for learning PHP",
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sedalit\\PhpChallenges\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vladislav Agarkov",
+            "email": "hello.agarkov@gmail.com"
+        }
+    ],
+    "require": {}
+}
