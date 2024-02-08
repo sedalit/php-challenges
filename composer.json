@@ -10,7 +10,8 @@
         },
         "files": [
             "src/Basic/BinarySum.php",
-            "src/Basic/IsPowerOfThree.php"
+            "src/Basic/IsPowerOfThree.php",
+            "src/Basic/Fibonacci.php"
         ]
     },
     "autoload-dev": {
