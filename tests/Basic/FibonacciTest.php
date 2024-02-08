@@ -20,7 +20,7 @@ class FibonacciTest extends TestCase
     /**
      * @dataProvider additionProvider
      */
-    public function testBinarySum(int $number, int $expected) : void
+    public function testFibonacci(int $number, int $expected) : void
     {
         $this->assertEquals($expected, fibonacci($number));
     }
