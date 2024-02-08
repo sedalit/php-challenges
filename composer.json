@@ -9,7 +9,8 @@
             "Sedalit\\PhpChallenges\\": "src/"
         },
         "files": [
-            "src/Basic/BinarySum.php"
+            "src/Basic/BinarySum.php",
+            "src/Basic/IsPowerOfThree.php"
         ]
     },
     "autoload-dev": {
