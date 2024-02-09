@@ -13,7 +13,8 @@
             "src/Basic/IsPowerOfThree.php",
             "src/Basic/Fibonacci.php",
             "src/Basic/AddDigits.php",
-            "src/Basic/IsBracketsBalanced.php"
+            "src/Basic/IsBracketsBalanced.php",
+            "src/Basic/IsPerfectNumber.php"
         ]
     },
     "autoload-dev": {
