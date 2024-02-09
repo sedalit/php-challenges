@@ -12,7 +12,8 @@
             "src/Basic/BinarySum.php",
             "src/Basic/IsPowerOfThree.php",
             "src/Basic/Fibonacci.php",
-            "src/Basic/AddDigits.php"
+            "src/Basic/AddDigits.php",
+            "src/Basic/IsBracketsBalanced.php"
         ]
     },
     "autoload-dev": {
