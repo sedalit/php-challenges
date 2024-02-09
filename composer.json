@@ -14,7 +14,8 @@
             "src/Basic/Fibonacci.php",
             "src/Basic/AddDigits.php",
             "src/Basic/IsBracketsBalanced.php",
-            "src/Basic/IsPerfectNumber.php"
+            "src/Basic/IsPerfectNumber.php",
+            "src/Basic/IsHappyTicket.php"
         ]
     },
     "autoload-dev": {
