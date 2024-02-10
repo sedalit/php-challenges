@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use function Sedalit\PhpChallenges\Basic\IsBracketsBalanced\isBracketsBalancedRegexp;
 use function Sedalit\PhpChallenges\Basic\IsBracketsBalanced\isBracketsBalancedStack;
 
-class IsBracketsBalanced extends TestCase
+class IsBracketsBalancedTest extends TestCase
 {
     public static function additionProvider() : array
     {
