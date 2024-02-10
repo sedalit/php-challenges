@@ -4,6 +4,7 @@ namespace Sedalit\PhpChallenges\Basic\IsPowerOfThree;
 
 /**
      * Функция, которая определяет, является ли переданное число натуральной степенью тройки. 
+     * @param int Целое число
 */
 function isPowerOfThree(int $number) : bool
 {
