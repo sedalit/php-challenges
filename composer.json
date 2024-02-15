@@ -18,7 +18,8 @@
             "src/Basic/IsHappyTicket.php",
             "src/Basic/FizzBuzz.php",
             "src/Arrays/Exchange.php",
-            "src/Arrays/IsContinuousSequence.php"
+            "src/Arrays/IsContinuousSequence.php",
+            "src/Arrays/CalculateAverage.php"
         ]
     },
     "autoload-dev": {
