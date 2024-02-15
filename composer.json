@@ -19,7 +19,8 @@
             "src/Basic/FizzBuzz.php",
             "src/Arrays/Exchange.php",
             "src/Arrays/IsContinuousSequence.php",
-            "src/Arrays/CalculateAverage.php"
+            "src/Arrays/CalculateAverage.php",
+            "src/Arrays/GetTotalAmount.php"
         ]
     },
     "autoload-dev": {
