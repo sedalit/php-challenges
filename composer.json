@@ -22,7 +22,8 @@
             "src/Arrays/CalculateAverage.php",
             "src/Arrays/GetTotalAmount.php",
             "src/Arrays/GetSameParity.php",
-            "src/Arrays/GetSuperSeriesWinner.php"
+            "src/Arrays/GetSuperSeriesWinner.php",
+            "src/Arrays/MakeCensored.php"
         ]
     },
     "autoload-dev": {
