@@ -24,7 +24,8 @@
             "src/Arrays/GetSameParity.php",
             "src/Arrays/GetSuperSeriesWinner.php",
             "src/Arrays/MakeCensored.php",
-            "src/Arrays/GetSameCount.php"
+            "src/Arrays/GetSameCount.php",
+            "src/Arrays/BubbleSort.php"
         ]
     },
     "autoload-dev": {
