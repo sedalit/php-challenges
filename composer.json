@@ -27,7 +27,8 @@
             "src/Arrays/GetSameCount.php",
             "src/Arrays/BubbleSort.php",
             "src/Arrays/CheckIfBalanced.php",
-            "src/Arrays/GetIntersectionOfSortedArrays.php"
+            "src/Arrays/GetIntersectionOfSortedArrays.php",
+            "src/Arrays/GetTheNearestLocation.php"
         ]
     },
     "autoload-dev": {
