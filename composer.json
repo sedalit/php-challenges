@@ -28,7 +28,8 @@
             "src/Arrays/BubbleSort.php",
             "src/Arrays/CheckIfBalanced.php",
             "src/Arrays/GetIntersectionOfSortedArrays.php",
-            "src/Arrays/GetTheNearestLocation.php"
+            "src/Arrays/GetTheNearestLocation.php",
+            "src/Arrays/Flatten.php"
         ]
     },
     "autoload-dev": {
