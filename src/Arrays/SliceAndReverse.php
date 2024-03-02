@@ -10,13 +10,30 @@ namespace Sedalit\PhpChallenges\Arrays\SliceAndReverse;
  */
 function sliceAndReverse(array $array, int $startIndex, int $endIndex) : array
 {
-    $result = $array;
+    $result = [];
+    $isReversed = false;
 
-    for ($i = $startIndex; $i < $endIndex; $i++) { 
-        $result[$i] = $array[$i];
-        $result[$endIndex - $i + 1] = $array[$i];
+    $start = $startIndex > 0 ? $startIndex : 1;
+    $resultTargetCount = ($start + $endIndex) * ($endIndex - $startIndex);
+    
+ 
+    for ($i = $startIndex; $i <= $resultTargetCount; $i++) { 
+        if ($i > $endIndex) {
+            $isReversed = true;
+        }
+
+        $arrayTargetElem = $endIndex * 2 - ($i - 1);
+
+        if ($arrayTargetElem < $startIndex) {
+            break;
+        } 
+        else if ($isReversed) {
+            $result[] = $array[$arrayTargetElem];
+        } else {
+            $result[] = $array[$i];
+        }
     
     }
-
+    print_r($result);
     return $result;
 }
