@@ -33,7 +33,8 @@
             "src/Arrays/GetChunked.php",
             "src/Arrays/SliceAndReverse.php",
             "src/Arrays/PascaleTriangle.php",
-            "src/Arrays/LengthOfLastWord.php"
+            "src/Arrays/LengthOfLastWord.php",
+            "src/Arrays/SummaryRanges.php"
         ]
     },
     "autoload-dev": {
