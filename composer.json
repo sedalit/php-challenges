@@ -30,7 +30,8 @@
             "src/Arrays/GetIntersectionOfSortedArrays.php",
             "src/Arrays/GetTheNearestLocation.php",
             "src/Arrays/Flatten.php",
-            "src/Arrays/GetChunked.php"
+            "src/Arrays/GetChunked.php",
+            "src/Arrays/SliceAndReverse.php"
         ]
     },
     "autoload-dev": {
