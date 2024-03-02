@@ -34,6 +34,6 @@ function sliceAndReverse(array $array, int $startIndex, int $endIndex) : array
         }
     
     }
-    print_r($result);
+
     return $result;
 }
