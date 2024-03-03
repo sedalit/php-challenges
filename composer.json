@@ -10,7 +10,8 @@
         },
         "files": [
             "src/AssociativeArrays/PickFromArray.php",
-            "src/AssociativeArrays/PickFromNestedArray.php"
+            "src/AssociativeArrays/PickFromNestedArray.php",
+            "src/AssociativeArrays/ArrayDifferences.php"
         ]
     },
     "autoload-dev": {
