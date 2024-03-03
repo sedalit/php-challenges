@@ -12,7 +12,8 @@
             "src/AssociativeArrays/PickFromArray.php",
             "src/AssociativeArrays/PickFromNestedArray.php",
             "src/AssociativeArrays/ArrayDifferences.php",
-            "src/AssociativeArrays/GetSortedNames.php"
+            "src/AssociativeArrays/GetSortedNames.php",
+            "src/AssociativeArrays/Map.php"
         ]
     },
     "autoload-dev": {
