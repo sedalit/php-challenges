@@ -16,7 +16,8 @@
             "src/AssociativeArrays/Map.php",
             "src/AssociativeArrays/FromPairs.php",
             "src/AssociativeArrays/FindWhere.php",
-            "src/AssociativeArrays/ToRna.php"
+            "src/AssociativeArrays/ToRna.php",
+            "src/AssociativeArrays/ToRoman.php"
         ]
     },
     "autoload-dev": {
