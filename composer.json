@@ -9,14 +9,6 @@
             "Sedalit\\PhpChallenges\\": "src/"
         },
         "files": [
-            "src/Basic/BinarySum.php",
-            "src/Basic/IsPowerOfThree.php",
-            "src/Basic/Fibonacci.php",
-            "src/Basic/AddDigits.php",
-            "src/Basic/IsBracketsBalanced.php",
-            "src/Basic/IsPerfectNumber.php",
-            "src/Basic/IsHappyTicket.php",
-            "src/Basic/FizzBuzz.php"
         ]
     },
     "autoload-dev": {
