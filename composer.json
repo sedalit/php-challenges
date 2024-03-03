@@ -15,7 +15,8 @@
             "src/AssociativeArrays/GetSortedNames.php",
             "src/AssociativeArrays/Map.php",
             "src/AssociativeArrays/FromPairs.php",
-            "src/AssociativeArrays/FindWhere.php"
+            "src/AssociativeArrays/FindWhere.php",
+            "src/AssociativeArrays/ToRna.php"
         ]
     },
     "autoload-dev": {
