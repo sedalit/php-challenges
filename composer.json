@@ -11,7 +11,8 @@
         "files": [
             "src/AssociativeArrays/PickFromArray.php",
             "src/AssociativeArrays/PickFromNestedArray.php",
-            "src/AssociativeArrays/ArrayDifferences.php"
+            "src/AssociativeArrays/ArrayDifferences.php",
+            "src/AssociativeArrays/GetSortedNames.php"
         ]
     },
     "autoload-dev": {
