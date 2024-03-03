@@ -17,6 +17,5 @@ class GetSortedNamesTest extends TestCase {
         $expected = ['Bronn', 'Eiegon', 'Reigar', 'Sansa'];
 
         $this->assertEquals($expected, getSortedNames($users));
-        getSortedNames($users); // 
     }
 }
