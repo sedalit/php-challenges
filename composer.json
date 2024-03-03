@@ -9,6 +9,7 @@
             "Sedalit\\PhpChallenges\\": "src/"
         },
         "files": [
+            "src/AssociativeArrays/PickFromArray.php"
         ]
     },
     "autoload-dev": {
