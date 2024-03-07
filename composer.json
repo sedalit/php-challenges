@@ -17,7 +17,8 @@
             "src/AssociativeArrays/FromPairs.php",
             "src/AssociativeArrays/FindWhere.php",
             "src/AssociativeArrays/ToRna.php",
-            "src/AssociativeArrays/ToRoman.php"
+            "src/AssociativeArrays/ToRoman.php",
+            "src/AssociativeArrays/Scrabble.php"
         ]
     },
     "autoload-dev": {
