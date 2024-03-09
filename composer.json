@@ -9,7 +9,8 @@
             "Sedalit\\PhpChallenges\\": "src/"
         },
         "files": [
-            "src/Functions/Average.php"
+            "src/Functions/Average.php",
+            "src/Functions/Last.php"
         ]
     },
     "autoload-dev": {
