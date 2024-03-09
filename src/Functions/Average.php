@@ -2,6 +2,9 @@
 
 namespace Sedalit\PhpChallenges\Functions\Average;
 
+/**
+ * Функция, считающая среднее арифметическое всех переданных аргументов
+ */
 function average(float ...$numbers) : float
 {
     $result = 0;
@@ -14,5 +17,3 @@ function average(float ...$numbers) : float
 
     return $result / count($numbers);
 }
-
-var_dump(average(1, 2, 3, 4, 5));
