@@ -10,7 +10,8 @@
         },
         "files": [
             "src/Functions/Average.php",
-            "src/Functions/Last.php"
+            "src/Functions/Last.php",
+            "src/Functions/TakeOldest.php"
         ]
     },
     "autoload-dev": {
