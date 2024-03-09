@@ -25,5 +25,7 @@
             "email": "hello.agarkov@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "funct/funct": "^1.5"
+    }
 }
