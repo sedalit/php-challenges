@@ -10,7 +10,8 @@
         },
         "files": [
             "src/DataAbstraction/CalculateDistance.php",
-            "src/DataAbstraction/Points.php"
+            "src/DataAbstraction/Points.php",
+            "src/DataAbstraction/Segments.php"
         ]
     },
     "autoload-dev": {
