@@ -9,7 +9,8 @@
             "Sedalit\\PhpChallenges\\": "src/"
         },
         "files": [
-            "src/DataAbstraction/CalculateDistance.php"
+            "src/DataAbstraction/CalculateDistance.php",
+            "src/DataAbstraction/GetMidpoint.php"
         ]
     },
     "autoload-dev": {
