@@ -13,7 +13,8 @@
             "src/Functions/Last.php",
             "src/Functions/TakeOldest.php",
             "src/Functions/GetChildren.php",
-            "src/Functions/GetGirlFriends.php"
+            "src/Functions/GetGirlFriends.php",
+            "src/Function/GetMenCountByYear.php"
         ]
     },
     "autoload-dev": {
