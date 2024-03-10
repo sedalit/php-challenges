@@ -12,7 +12,8 @@
             "src/Functions/Average.php",
             "src/Functions/Last.php",
             "src/Functions/TakeOldest.php",
-            "src/Functions/GetChildren.php"
+            "src/Functions/GetChildren.php",
+            "src/Functions/GetGirlFriends.php"
         ]
     },
     "autoload-dev": {
