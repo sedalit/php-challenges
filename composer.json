@@ -21,7 +21,8 @@
             "src/Functions/FindIndexOfNearest.php",
             "src/Functions/GetSameParity.php",
             "src/Functions/FilterAnagrams.php",
-            "src/Functions/HexToRGB.php"
+            "src/Functions/HexToRGB.php",
+            "src/Functions/RGBToHex.php"
         ]
     },
     "autoload-dev": {
