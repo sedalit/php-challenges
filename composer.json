@@ -10,7 +10,7 @@
         },
         "files": [
             "src/DataAbstraction/CalculateDistance.php",
-            "src/DataAbstraction/GetMidpoint.php"
+            "src/DataAbstraction/Points.php"
         ]
     },
     "autoload-dev": {
