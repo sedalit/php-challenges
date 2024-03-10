@@ -17,7 +17,8 @@
             "src/Functions/GetMenCountByYear.php",
             "src/Functions/GetFreeDomainsCount.php",
             "src/Functions/GetManWithLeastFriends.php",
-            "src/Functions/Without.php"
+            "src/Functions/Without.php",
+            "src/Functions/FindIndexOfNearest.php"
         ]
     },
     "autoload-dev": {
