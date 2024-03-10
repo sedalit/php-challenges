@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use function Sedalit\PhpChallenges\Arrays\SummaryRanges\summaryRanges;
 
 class SummaryRangesTest extends TestCase {
-    public function testSliceAndReverse() : void
+    public function testSummaryRanges() : void
     {
         $data = [1, 2, 3, 4];
         $expected = ["1->4"];

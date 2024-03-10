@@ -17,7 +17,7 @@ function summaryRanges(array $array) : array
     $sequenceEnd = null;
 
     for ($i = 0; $i < count($array); $i++) {
-        if ($array[$i] + 1 === $array[$i + 1]) {
+        if (array_key_exists($i + 1, $array) && $array[$i] + 1 === $array[$i + 1]) {
             if (!$sequenceStart) $sequenceStart = $array[$i];
             $sequenceEnd = $array[$i + 1];
         } else {
@@ -26,6 +26,6 @@ function summaryRanges(array $array) : array
             $sequenceEnd = null;
         }
     }
-
+    
     return $result;
 }
