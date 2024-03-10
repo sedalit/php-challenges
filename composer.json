@@ -14,7 +14,8 @@
             "src/Functions/TakeOldest.php",
             "src/Functions/GetChildren.php",
             "src/Functions/GetGirlFriends.php",
-            "src/Functions/GetMenCountByYear.php"
+            "src/Functions/GetMenCountByYear.php",
+            "src/Functions/GetFreeDomainsCount.php"
         ]
     },
     "autoload-dev": {
