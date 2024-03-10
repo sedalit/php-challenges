@@ -18,7 +18,8 @@
             "src/Functions/GetFreeDomainsCount.php",
             "src/Functions/GetManWithLeastFriends.php",
             "src/Functions/Without.php",
-            "src/Functions/FindIndexOfNearest.php"
+            "src/Functions/FindIndexOfNearest.php",
+            "src/Functions/GetSameParity.php"
         ]
     },
     "autoload-dev": {
