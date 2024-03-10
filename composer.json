@@ -22,7 +22,8 @@
             "src/Functions/GetSameParity.php",
             "src/Functions/FilterAnagrams.php",
             "src/Functions/HexToRGB.php",
-            "src/Functions/RGBToHex.php"
+            "src/Functions/RGBToHex.php",
+            "src/Functions/RollDiceStatistics.php"
         ]
     },
     "autoload-dev": {
