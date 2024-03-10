@@ -7,15 +7,6 @@
 
  ---
 ## Содержание
-* [Basics](src/Basic)
-   * [AddDigits](src/Basic/AddDigits.php)
-   * [BinarySum](src/Basic/BinarySum.php)
-   * [Fibonacci](src/Basic/Fibonacci.php)
-   * [FizzBuzz](src/Basic/FizzBuzz.php)
-   * [IsBracketsBalanced](src/Basic/IsBracketsBalanced.php)
-   * [IsHappyTicket](src/Basic/IsHappyTicket.php)
-   * [IsPerfectNumber](src/Basic/IsPerfectNumber.php)
-   * [IsPowerOfThree](src/Basic/IsPowerOfThree.php)
 * [Arrays](src/Arrays)
    * [BubbleSort](src/Arrays/BubbleSort.php)
    * [CalculateAverage](src/Arrays/CalculateAverage.php)
@@ -36,6 +27,5 @@
    * [SliceAndReverse](src/Arrays/SliceAndReverse.php)
    * [SummaryRanges](src/Arrays/SummaryRanges.php)
    
-
  ### Ссылки
  * [Хекслет](https://ru.hexlet.io)
