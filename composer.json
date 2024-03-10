@@ -11,7 +11,8 @@
         "files": [
             "src/DataAbstraction/CalculateDistance.php",
             "src/DataAbstraction/Points.php",
-            "src/DataAbstraction/Segments.php"
+            "src/DataAbstraction/Segments.php",
+            "src/DataAbstraction/Rectangle.php"
         ]
     },
     "autoload-dev": {
