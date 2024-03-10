@@ -19,16 +19,19 @@ function arrayDifferences(array $first, array $second) : array
 
     $merged = array_merge($first, $second);
     foreach ($merged as $key => $value) {
-        if ($first[$key] && $second[$key] && $first[$key] !== $second[$key]) {
+        $isExistInFirst = array_key_exists($key, $first);
+        $isExistInSecond = array_key_exists($key, $second);
+
+        if ($isExistInFirst && $isExistInSecond && $first[$key] !== $second[$key]) {
             $result[$key] = "changed";
-        } elseif ($first[$key] && $second[$key] && $first[$key] === $second[$key]) {
+        } elseif ($isExistInFirst && $isExistInSecond && $first[$key] === $second[$key]) {
             $result[$key] = "unchanged";
-        } elseif ($first[$key] && !$second[$key]) {
+        } elseif ($isExistInFirst && !$isExistInSecond) {
             $result[$key] = "deleted";
-        } elseif (!$first[$key] && $second[$key]) {
+        } elseif (!$isExistInFirst && $isExistInSecond) {
             $result[$key] = "added";
         }
     }
-
+    
     return $result;
 }
