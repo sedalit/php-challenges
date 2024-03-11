@@ -13,7 +13,8 @@
             "src/DataAbstraction/Points.php",
             "src/DataAbstraction/Segments.php",
             "src/DataAbstraction/Rectangle.php",
-            "src/DataAbstraction/Rational.php"
+            "src/DataAbstraction/Rational.php",
+            "src/DataAbstraction/Url.php"
         ]
     },
     "autoload-dev": {
