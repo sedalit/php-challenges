@@ -2,6 +2,9 @@
 
 namespace App\Classes;
 
+/**
+ * Точка на координатной плоскости
+ */
 class Point {
 
     /**
