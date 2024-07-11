@@ -10,7 +10,8 @@
         },
         "files": [
             "src/Classes/PointFunctions.php",
-            "src/Classes/UserFunctions.php"
+            "src/Classes/UserFunctions.php",
+            "src/Classes/SegmentFunctions.php"
         ]
     },
     "autoload-dev": {
