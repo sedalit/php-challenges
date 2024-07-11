@@ -2,7 +2,7 @@
 
 namespace App\Classes;
 
-class User {
+class User implements ComparableInterface {
     /**
      * ID пользователя
      * @var int
@@ -17,5 +17,10 @@ class User {
     public function getId() : int
     {
         return $this->id;
+    }
+
+    public function compareTo(User $user): bool
+    {
+        return $this->id === $user->id;
     }
 }

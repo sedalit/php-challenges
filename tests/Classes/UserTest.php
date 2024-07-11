@@ -32,4 +32,17 @@ class UserTest extends TestCase {
 
         $this->assertEquals(true, $result);
     }
+
+    public function testComparable() : void
+    {
+        $firstUser = new User(1);
+        $secondUser = new User(2);
+
+        $this->assertEquals(false, $firstUser->compareTo($secondUser));
+
+        $firstUser = new User(3);
+        $secondUser = new User(3);
+
+        $this->assertEquals(true, $firstUser->compareTo($secondUser));
+    }
 }
