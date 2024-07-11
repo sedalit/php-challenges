@@ -9,7 +9,7 @@
             "App\\": "src/"
         },
         "files": [
-            "src/Classes/Functions.php"
+            "src/Classes/PointFunctions.php"
         ]
     },
     "autoload-dev": {

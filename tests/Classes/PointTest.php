@@ -4,7 +4,7 @@ namespace Tests\Classes;
 
 use PHPUnit\Framework\TestCase;
 use App\Classes\Point;
-use function App\Classes\Functions\getMidpoint;
+use function App\Classes\PointFunctions\getMidpoint;
 
 class PointTest extends TestCase {
     public function testGetMidpoint() : void

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Classes\Functions;
+namespace App\Classes\PointFunctions;
 
 use App\Classes\Point;
 
