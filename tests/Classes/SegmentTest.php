@@ -22,4 +22,14 @@ class SegmentTest extends TestCase {
 
         $this->assertEquals($expected, $result->getBeginPoint());
     }
+
+    public function testToString() : void
+    {
+        $segment = new Segment(
+            new Point(1, 2),
+            new Point(4, 5)
+        );
+
+        $this->assertEquals("[(1, 2), (4, 5)]", (string) $segment);
+    }
 }
