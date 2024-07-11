@@ -30,4 +30,11 @@ class PointTest extends TestCase {
 
         $this->assertEquals($expected, $result);
     }
+
+    public function testToString() : void
+    {
+        $point = new Point(1, 3);
+
+        $this->assertEquals("(1, 3)", (string) $point);
+    }
 }
