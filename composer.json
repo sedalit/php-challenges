@@ -9,7 +9,6 @@
             "App\\": "src/"
         },
         "files": [
-            "src/Classes/Point.php",
             "src/Classes/Functions.php"
         ]
     },
