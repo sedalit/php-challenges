@@ -269,4 +269,32 @@ class NodeTest extends TestCase {
 
         $this->assertEquals($expected, $tree->toString());
     }
+
+    public function testEvery() : void
+    {
+        $tree = new Node(
+            9,
+            new Node(
+                4,
+                new Node(8),
+                new Node(
+                    6,
+                    new Node(3),
+                    new Node(7)
+                )
+            ),
+            new Node(
+                17,
+                null,
+                new Node(
+                    22,
+                    null,
+                    new Node(20)
+                )
+            )
+        );
+
+        $this->assertEquals(true, $tree->every(fn($key) => $key <= 22));
+        $this->assertEquals(false, $tree->every(fn($key) => $key < 22));
+    }
 }

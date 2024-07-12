@@ -172,4 +172,18 @@ class Node {
         $imploded = implode(", ", $this->toArray());
         return "({$imploded})";
     }
+
+    /**
+     * Проверяет, удовлетворяют ли все ключи дерева условию, заданному в передаваемой функции
+     * @param object $callback
+     * @return bool
+     */
+    public function every(object $callback) : bool
+    {
+        $allKeys = $this->toArray();
+
+        $result = array_filter($allKeys, $callback);
+
+        return count($result) === count($allKeys);
+    }
 }
