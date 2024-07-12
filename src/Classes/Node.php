@@ -186,4 +186,18 @@ class Node {
 
         return count($result) === count($allKeys);
     }
+
+    /**
+     * Проверяет, удовлетворяет ли какой-либо ключ дерева условию, заданному в передаваемой функции
+     * @param object $callback
+     * @return bool
+     */
+    public function some(object $callback) : bool
+    {
+        $allKeys = $this->toArray();
+
+        $result = array_filter($allKeys, $callback);
+        
+        return count($result) >= 1;
+    }
 }
