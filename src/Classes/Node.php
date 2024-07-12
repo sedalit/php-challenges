@@ -8,7 +8,7 @@ namespace App\Classes;
 class Node {
     /**
      * Ключ узла
-     * @var int
+     * @var int|null
      */
     protected $key;
 
@@ -24,7 +24,7 @@ class Node {
      */
     protected $rightChild = null;
 
-    public function __construct(int $key, Node $leftChild = null, Node $rightChild = null) 
+    public function __construct(int $key = null, Node $leftChild = null, Node $rightChild = null) 
     {
         $this->key = $key;
         $this->leftChild = $leftChild;
@@ -35,7 +35,7 @@ class Node {
      * Функция получения ключа текущего узла
      * @return int
      */
-    public function getKey() : int
+    public function getKey() : ?int
     {
         return $this->key;
     }
@@ -57,12 +57,18 @@ class Node {
      */
     public function searchNode(int $key) : ?Node
     {
-        if ($key === $this->key) {
-            return $this;
-        } else if ($key > $this->key) {
-            return $this->rightChild != null ? $this->rightChild->searchNode($key) : null; 
-        } else {
-            return $this->leftChild != null ? $this->leftChild->searchNode($key) : null; 
+        switch ($key) {
+            case $key === $this->key:
+                return $this;
+
+            case $key > $this->key:
+                return $this->rightChild != null ? $this->rightChild->searchNode($key) : null; 
+
+            case $key < $this->key:
+                return $this->leftChild != null ? $this->leftChild->searchNode($key) : null; 
+            
+            default:
+                return null;
         }
     }
 }
