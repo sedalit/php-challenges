@@ -117,4 +117,28 @@ class NodeTest extends TestCase {
 
         $this->assertEquals(null, $node);
     }
+
+    public function testInsertNode() : void
+    {
+        $tree = new Node();
+        $tree->insertNode(9);
+
+        $this->assertEquals(9, $tree->getKey());
+
+        $tree->insertNode(17);
+
+        $this->assertEquals(17, $tree->getRight()->getKey());
+
+        $tree->insertNode(4);
+
+        $this->assertEquals(4, $tree->getLeft()->getKey());
+
+        $tree->insertNode(3);
+
+        $this->assertEquals(3, $tree->getLeft()->getLeft()->getKey());
+
+        $tree->insertNode(6);
+
+        $this->assertEquals(6, $tree->getLeft()->getRight()->getKey());
+    }
 }

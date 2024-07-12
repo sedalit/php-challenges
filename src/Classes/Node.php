@@ -71,4 +71,29 @@ class Node {
                 return null;
         }
     }
+
+    /**
+     * Функция добавления узла в древо
+     * @param int $key
+     * @return void
+     */
+    public function insertNode(int $key) : void
+    {
+        switch ($this->key) {
+            case null:
+                $this->key = $key;
+                break;
+
+            case $key > $this->key:
+                $this->rightChild != null ? $this->rightChild->insertNode($key) : $this->rightChild = new Node($key);
+                break;
+
+            case $key < $this->key:
+                $this->leftChild != null ? $this->leftChild->insertNode($key) : $this->leftChild = new Node($key);
+                break;
+            
+            default:
+                break;
+        }
+    }
 }
