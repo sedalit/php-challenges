@@ -197,7 +197,35 @@ class Node {
         $allKeys = $this->toArray();
 
         $result = array_filter($allKeys, $callback);
-        
+
         return count($result) >= 1;
+    }
+
+    /**
+     * Функция, проверяющая дерево на сбалансированность.
+     * Дерево считается сбалансированным, если количество узлов в левом и правом поддеревьях каждого узла отличается не более, чем на 2
+     * @return bool
+     */
+    public function isBalanced() : bool
+    {
+        return abs($this->getLeftHeight() - $this->getRightHeight()) <= 2;
+    }
+
+    protected function getLeftHeight() : int
+    {
+        $result = 1;
+
+        if ($this->leftChild) $result += $this->leftChild->getLeftHeight();
+
+        return $result;
+    }
+
+    protected function getRightHeight() : int
+    {
+        $result = 1;
+
+        if ($this->rightChild) $result += $this->rightChild->getRightHeight();
+
+        return $result;
     }
 }

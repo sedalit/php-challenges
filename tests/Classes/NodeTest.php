@@ -325,4 +325,33 @@ class NodeTest extends TestCase {
         $this->assertEquals(true, $tree->some(fn($key) => $key < 4));
         $this->assertEquals(false, $tree->some(fn($key) => $key > 22));
     }
+
+    public function testIsBalanced1() : void
+    {
+        $tree = new Node(
+            4,
+            new Node(
+                3,
+                new Node(2)
+            )
+        );
+
+        $this->assertEquals(true, $tree->isBalanced());
+    }
+
+    public function testIsBalanced2() : void
+    {
+        $tree = new Node(
+            4,
+            new Node(
+                3,
+                new Node(
+                    2,
+                    new Node(1)
+                )
+            )
+        );
+
+        $this->assertEquals(false, $tree->isBalanced());
+    }
 }
