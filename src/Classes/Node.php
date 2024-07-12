@@ -31,6 +31,11 @@ class Node {
         $this->rightChild = $rightChild;
     }
 
+    public function __toString() : string
+    {
+        return $this->key ?? '';
+    }
+
     /**
      * Функция получения ключа текущего узла
      * @return int
@@ -95,5 +100,76 @@ class Node {
             default:
                 break;
         }
+    }
+
+    /**
+     * Вовзаращает количество узлов в дереве
+     * @return int
+     */
+    public function getCount() : int
+    {
+        $count = 1;
+
+        if ($this->leftChild) {
+            $count += $this->leftChild->getCount();
+        }
+
+        if ($this->rightChild) {
+            $count += $this->rightChild->getCount();
+        }
+
+        return $count;
+    }
+
+    /**
+     * Возвращает сумму всех ключей дерева
+     * @return int
+     */
+    public function getSum() : int
+    {
+        $sum = $this->key ?? 0;
+
+        if ($this->leftChild) {
+            $sum += $this->leftChild->getSum();
+        }
+
+        if ($this->rightChild) {
+            $sum += $this->rightChild->getSum();
+        }
+
+        return $sum;
+    }
+
+    /**
+     * Возвращает одномерный массив, содержащий все ключи дерева
+     * @return array
+     */
+    public function toArray() : array
+    {
+        $result = $this->key != null ? [$this->key] : [];
+
+        if ($this->leftChild) {
+            $leftResut = $this->leftChild->toArray();
+
+            $result = array_merge($result, $leftResut);
+        } 
+
+        if ($this->rightChild) {
+            $rightResult = $this->rightChild->toArray();
+
+            $result = array_merge($result, $rightResult);
+        }
+
+        return $result;
+    }
+
+    /**
+     * Возвращает строковое представление дерева
+     * @return string
+     */
+    public function toString() : string
+    {
+        $imploded = implode(", ", $this->toArray());
+        return "({$imploded})";
     }
 }
