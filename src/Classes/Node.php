@@ -14,13 +14,13 @@ class Node {
 
     /**
      * Левый ребёнок
-     * @var Node
+     * @var Node|null
      */
     protected $leftChild = null;
 
     /**
      * Правый ребёнок
-     * @var Node
+     * @var Node|null
      */
     protected $rightChild = null;
 
