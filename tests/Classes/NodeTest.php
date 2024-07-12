@@ -141,4 +141,132 @@ class NodeTest extends TestCase {
 
         $this->assertEquals(6, $tree->getLeft()->getRight()->getKey());
     }
+
+    public function testGetCount1() : void
+    {
+        $tree = new Node();
+
+        $this->assertEquals(1, $tree->getCount());
+
+        $tree->insertNode(9);
+        $tree->insertNode(4);
+
+        $this->assertEquals(2, $tree->getCount());
+
+        $tree->insertNode(12);
+
+        $this->assertEquals(3, $tree->getCount());
+    }
+
+    public function testGetCount2() : void
+    {
+        $tree = new Node(
+            9,
+            new Node(
+                4,
+                new Node(8),
+                new Node(
+                    6,
+                    new Node(3),
+                    new Node(7)
+                )
+            ),
+            new Node(
+                17,
+                null,
+                new Node(
+                    22,
+                    null,
+                    new Node(20)
+                )
+            )
+        );
+
+        $this->assertEquals(9, $tree->getCount());
+    }
+
+    public function testGetSum() : void
+    {
+        $tree = new Node(
+            9,
+            new Node(
+                4,
+                new Node(8),
+                new Node(
+                    6,
+                    new Node(3),
+                    new Node(7)
+                )
+            ),
+            new Node(
+                17,
+                null,
+                new Node(
+                    22,
+                    null,
+                    new Node(20)
+                )
+            )
+        );
+
+        $this->assertEquals(96, $tree->getSum());
+    }
+
+    public function testToArray() : void
+    {
+        $tree = new Node(
+            9,
+            new Node(
+                4,
+                new Node(8),
+                new Node(
+                    6,
+                    new Node(3),
+                    new Node(7)
+                )
+            ),
+            new Node(
+                17,
+                null,
+                new Node(
+                    22,
+                    null,
+                    new Node(20)
+                )
+            )
+        );
+
+        $expected = [9, 4, 8, 6, 3, 7, 17, 22, 20];
+
+        $this->assertEquals($expected, $tree->toArray());
+    }
+
+    public function testToString() : void
+    {
+        $tree = new Node(
+            9,
+            new Node(
+                4,
+                new Node(8),
+                new Node(
+                    6,
+                    new Node(3),
+                    new Node(7)
+                )
+            ),
+            new Node(
+                17,
+                null,
+                new Node(
+                    22,
+                    null,
+                    new Node(20)
+                )
+            )
+        );
+
+        $expected = '(9, 4, 8, 6, 3, 7, 17, 22, 20)';
+
+        $this->assertEquals($expected, $tree->toString());
+    }
 }
