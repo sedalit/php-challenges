@@ -25,6 +25,7 @@
     ],
     "require": {
         "php-ds/php-ds": "^1.5",
-        "tightenco/collect": "^8.83"
+        "tightenco/collect": "^8.83",
+        "nesbot/carbon": "^2.72"
     }
 }
